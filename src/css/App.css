@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.first_div {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  border: solid 1px #dee2e6;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+  margin: auto;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: solid 3px #dee2e6;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .1s ease-in-out;
+}
+
+.square:hover {
+  background-color: #dee2e6;
+  cursor: pointer;
+}
+
+.square.success {
+  background: #2AAA8A;
+}
+
+@media (min-width: 576px) {
+  .board {
+    width: 360px;
+    height: 360px;
+  }
+
+  .square {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .board {
+    width: 420px;
+    height: 420px;
+  }
+
+  .square {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 992px) {
+  .board {
+    width: 480px;
+    height: 480px;
+  }
+
+  .square {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.square:nth-child(1) {
+  border-radius: 10px 0px 0px 0px;
+}
+
+.square:nth-child(3) {
+  border-radius: 0px 10px 0px 0px;
+}
+
+.square:nth-child(7) {
+  border-radius: 0px 0px 0px 10px;
+}
+
+.square:nth-child(9) {
+  border-radius: 0px 0px 10px 0px;
+}
+
+/* FOOTER */
+.footer {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  background-color: black;
+  height: 40px;
+  z-index: 999;
+}
